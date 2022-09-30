@@ -18,7 +18,6 @@
 ### 🤸‍♂️ 스터디 참여 Member
 | 단계 | 참여 멤버 |
 | -- | -- |
-| **입문** | 이나현 |
 | **심화** | 윤혜경 조은영 |
 
 
@@ -33,12 +32,12 @@
 
 | 주차 | 주제 | 블로그 담당 | 작성 여부 |
 | ---- | ---- | ----------- | --------- |
-| 1주차 | `입문` React 프로젝트 생성하기 & JSX <br /> `심화` Redux 시작하기 | 조은영 | [ ] |
-| 2주차 | `입문` React의 핵심 개념 익히기 (컴포넌트, Props, State, Lifecycle) <br /> `심화` Pure Redux(1): Counter | 윤혜경 | [ ] |
-| 3주차 | `입문` React의 Hooks <br /> `심화` Pure Redux(2): To-do List | 이나현 | [ ] |
-| 4주차 | `입문` 이벤트 핸들링 & react-router-dom으로 페이지 경로 설정하기 <br /> `심화` React-Redux | 조은영 | [ ] |
-| 5주차 | `입문` API를 호출하여 CRUD 기능 구현하기 <br /> `심화` Redux Toolkit | 윤혜경 | [ ] |
-| 6주차 | CSS 스타일링 & 프로젝트 진행에 도움이 되는 기능들 | 이나현 | [ ] |
+| 1주차 | `입문` React 프로젝트 생성하기 & JSX <br /> `심화` Redux 시작하기 | 조은영 | <ul><li> -[ ] </li><ul> |
+| 2주차 | `입문` React의 핵심 개념 익히기 (컴포넌트, Props, State, Lifecycle) <br /> `심화` Pure Redux(1): Counter | 윤혜경 | <ul><li> -[ ] </li><ul> |
+| 3주차 | `입문` React의 Hooks <br /> `심화` Pure Redux(2): To-do List | 김민지 | <ul><li> -[ ] </li><ul> |
+| 4주차 | `입문` 이벤트 핸들링 & react-router-dom으로 페이지 경로 설정하기 <br /> `심화` React-Redux | 조은영 | <ul><li> -[ ] </li><ul> |
+| 5주차 | `입문` API를 호출하여 CRUD 기능 구현하기 <br /> `심화` Redux Toolkit | 윤혜경 | <ul><li> -[ ] </li><ul> |
+| 6주차 | CSS 스타일링 & 프로젝트 진행에 도움이 되는 기능들 | 김민지 | <ul><li> -[ ] </li><ul> |
 
 
 
