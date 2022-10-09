@@ -4,13 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import Clock from './section4/Clock';
-import CommentList from './section5/CommentList';
+import Clock from './section04/Clock';
+import CommentList from './section05/CommentList';
+import NotificationList from './section06/NotificationList';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
   root.render(
   <React.StrictMode>
-    <CommentList />
+    <NotificationList />
   </React.StrictMode>
   );
 
