@@ -15,6 +15,17 @@ export default function Counter(props) {
     };
   });
 
+  // const memoizedValue = useMemo(() => {
+  //   // 연산량이 높은 작업을 수행하여 결과를 반환
+  //   computeExpensiveValue(a, b); // 의존성 변수 1, 의존성 변수 2
+  // }, [a, b]);
+
+  // const memoizedCallback = useCallback(() => {
+  //   // 값이 아닌 함수를 반환
+  //   // 특정 변수의 값이 변한 경우에만 함수를 다시 정의
+  //   doSomething(의존성변수1, 의존성변수2);
+  // }, [의존성변수1, 의존성변수2]);
+
   return (
     <div>
       <p>총 {count}번 클릭했습니다.</p>
