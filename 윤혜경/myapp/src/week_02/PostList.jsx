@@ -1,5 +1,5 @@
 import React from "react";
-import Comment from "./Post";
+import Post from "./Post";
 
 const posts = [
   {

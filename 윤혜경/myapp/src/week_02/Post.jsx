@@ -32,7 +32,7 @@ const styles = {
     },
 };
 
-function Comment(props) {
+function Post(props) {
     return (
         <div style={styles.wrapper}>
             <div style={styles.imageContainer}>
@@ -43,11 +43,12 @@ function Comment(props) {
             </div>
 
             <div style={styles.contentContainer}>
-                <span style={styles.nameText}>{props.name}</span>
-                <span style={styles.commentText}>{props.comment}</span>
+                <span style={styles.titleText}>{props.title}</span>
+                <span style={styles.nicknameText}>{props.nickname}</span>
+                <span style={styles.contentText}>{props.content}</span>
             </div>
         </div>
     );
 }
 
-export default Comment;
+export default Post;
