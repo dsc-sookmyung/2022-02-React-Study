@@ -8,11 +8,12 @@ import Clock from './section04/Clock';
 import CommentList from './section05/CommentList';
 import NotificationList from './section06/NotificationList';
 import AttendanceBook from './section10/AttendanceBook';
+import Accommodate from './section07/Accommodate';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
   root.render(
   <React.StrictMode>
-    <AttendanceBook />
+    <Accommodate />
   </React.StrictMode>
   );
 
