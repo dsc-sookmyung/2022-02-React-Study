@@ -1,10 +1,10 @@
 import "./App.css";
-import PostList from "./week02/PostList";
+import Accommodate from "./chapter_07/Accommodate";
 
 function App() {
   return (
     <div>
-      <PostList />
+      <Accommodate />
     </div>
   );
 }
