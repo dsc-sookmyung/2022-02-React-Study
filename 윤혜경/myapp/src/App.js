@@ -1,5 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
+import MainPage from './page/MainPage.jsx';
+import DetailPage from './page/DetailPage.jsx';
+import MyPage from './page/MyPage.jsx';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+
+function App() {
+  return (
+    <div className="App">
+      <BrowserRouter>
+        <Switch>
+          <Route index element={<MainPage />} />
+          <Route path='MainPage' element={<MainPage />} />
+          <Route path='MyPage' element={<MyPage />} />
+        </Switch>
+      </BrowserRouter>
+    </div>
+  );
+}
+
+export default App;
+
+/*
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
   return (
@@ -23,3 +47,4 @@ function App() {
 }
 
 export default App;
+*/
