@@ -7,15 +7,13 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Switch>
-          <Route index element={<MainPage />} />
-          <Route path='MainPage' element={<MainPage />} />
-          <Route path='MyPage' element={<MyPage />} />
-        </Switch>
-      </BrowserRouter>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route index element={<MainPage/>}/>
+        <Route path="mainpage" element={<MainPage/>}/>
+        <Route path="mypage" element={<MyPage/>}/>
+      </Switch>
+    </BrowserRouter>
   );
 }
 

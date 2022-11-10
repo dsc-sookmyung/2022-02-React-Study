@@ -32,13 +32,18 @@ const posts = [
 function PostList(props) {
     return (
         <div>
-            {posts.map((post, index) => {
+            {posts.map((post) => {
                 return (
-                    <Post key={index} nickname={post.nickname} title={post.title} content={post.content} />
+                    <Post
+                        key={post.id}
+                        id={post.id}
+                        nickname={post.nickname}
+                        title={post.title}
+                        content={post.content} />
                 );
             })}
         </div>
     );
-};
+}
 
 export default PostList;

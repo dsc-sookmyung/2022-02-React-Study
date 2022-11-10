@@ -1,54 +1,44 @@
 import React from "react";
+import { useHistory, useNavigate } from "react-router-dom";
 
 const styles = {
-    wrapper: {
-        margin: 8,
-        padding: 8,
-        display: "flex",
-        flexDirection: "row",
-        border: "1px solid grey",
-        borderRadius: 16,
-    },
-    imageContainer: {},
-    image: {
-        width: 50,
-        height: 50,
-        borderRadius: 25,
-    },
-    contentContainer: {
-        marginLeft: 8,
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-    },
-    nameText: {
-        color: "black",
-        fontSize: 16,
-        fontWeight: "bold",
-    },
-    commentText: {
-        color: "black",
-        fontSize: 16,
-    },
+  wrapper: {
+    display: "flex",
+    flexDirection: "row",
+    flexWrap: "wrap",
+  },
+  contentContainer: {
+    width: "400px",
+    margin: 10,
+    padding: 10,
+    border: "1px solid grey",
+    borderRadius: 16,
+    cursor: "pointer",
+  },
+  titleText: {
+    fontSize: "18px",
+    fontWeight: "bold",
+  },
+  nicknameText: {
+    color: "grey",
+  },
+  contentText: {
+    marginTop: 15,
+  },
 };
 
 function Post(props) {
-    return (
-        <div style={styles.wrapper}>
-            <div style={styles.imageContainer}>
-                <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"
-                    style={styles.image}
-                />
-            </div>
+  const navigate = useHistory();
 
-            <div style={styles.contentContainer}>
-                <span style={styles.titleText}>{props.title}</span>
-                <span style={styles.nicknameText}>{props.nickname}</span>
-                <span style={styles.contentText}>{props.content}</span>
-            </div>
-        </div>
-    );
+  return (
+    <div style={styles.wrapper} onClick={() => navigate(`/post/${props.id}`)}>
+      <div style={styles.contentContainer}>
+        <div style={styles.titleText}>{props.title}</div>
+        <div style={styles.nicknameText}>{props.nickname}</div>
+        <div style={styles.contentText}>{props.content}</div>
+      </div>
+    </div>
+  );
 }
 
 export default Post;

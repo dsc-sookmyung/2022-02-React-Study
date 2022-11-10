@@ -1,23 +1,21 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import MainPage from "../page/MainPage";
-import MyPage from "../page/MainPage"
+import MyPage from "../page/MyPage";
 
-const Navigation = () => {
+function Navigation(props) {
+  const navigate = useHistory();
+
   return (
-    <nav className="wrapper">
-      <div>
-        <Link to='/MainPage'>
-            My Blog!
-        </Link>
-        </div>
-      <div>
-        <Link to='/MyPage'>
-            My Page
-        </Link>
-        </div>
-    </nav>
-  );
-};
+    <div>
+      <div onClick={() => navigate("mainpage")}>
+        My Blog!
+      </div>
+      <div onClick={() => navigate("mypage")}>
+        My Page!
+      </div>
+    </div>
+  )
+}
 
 export default Navigation;
