@@ -1,18 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
 import MainPage from './page/MainPage.jsx';
-import DetailPage from './page/DetailPage.jsx';
 import MyPage from './page/MyPage.jsx';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Navigation from './component/Navigation'
+import DetailPage from './page/DetailPage';
+import { BrowserRouter, Route, Routes} from 'react-router-dom';
 
 function App() {
   return (
     <BrowserRouter>
-      <Switch>
-        <Route index element={<MainPage/>}/>
-        <Route path="mainpage" element={<MainPage/>}/>
-        <Route path="mypage" element={<MyPage/>}/>
-      </Switch>
+      <Navigation />
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/mypage" element={<MyPage />} />
+        <Route path="/post/:postId" element={<DetailPage />} />
+      </Routes>
     </BrowserRouter>
   );
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import { useHistory, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const styles = {
   wrapper: {
@@ -28,7 +28,7 @@ const styles = {
 };
 
 function Post(props) {
-  const navigate = useHistory();
+  const navigate = useNavigate();
 
   return (
     <div style={styles.wrapper} onClick={() => navigate(`/post/${props.id}`)}>
