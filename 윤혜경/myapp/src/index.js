@@ -1,19 +1,21 @@
+// eslint-disable-next-line
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
+import App from './App';
 import PostList from "./week_02/PostList";
-import Library from './chapter_03/Library'
-import CommentList from './chapter_05/CommentList';
-import Accommodate from './chapter_07/Accommodate';
+import DetailPage from './page/DetailPage';
+import Navigation from './component/Navigation'
+import { BrowserRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Accommodate />
+    <App />
   </React.StrictMode>
-)
+);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
