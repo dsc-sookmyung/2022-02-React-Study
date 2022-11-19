@@ -1,9 +1,11 @@
+import { BrowserRouter, Route, Routes} from 'react-router-dom';
 import './App.css';
 import MainPage from './page/MainPage.jsx';
 import MyPage from './page/MyPage.jsx';
 import Navigation from './component/Navigation'
 import DetailPage from './page/DetailPage';
-import { BrowserRouter, Route, Routes} from 'react-router-dom';
+import CreatePage from './page/CreatePage';
+import UpdatePage from './page/UpdatePage';
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
         <Route path="/" element={<MainPage />} />
         <Route path="/mypage" element={<MyPage />} />
         <Route path="/post/:postId" element={<DetailPage />} />
+        <Route path="/create" element={<CreatePage />} />
+        <Route path="/update/:postId" element={<UpdatePage />} />
       </Routes>
     </BrowserRouter>
   );
