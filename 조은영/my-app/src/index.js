@@ -11,11 +11,12 @@ import AttendanceBook from './section10/AttendanceBook';
 import Accommodate from './section07/Accommodate';
 import ConfirmButton from './section08/ConfirmButton';
 import SignUp from './section11/SignUp';
+import LandingPage from './section09/LandingPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
   root.render(
   <React.StrictMode>
-    <SignUp />
+    <LandingPage />
   </React.StrictMode>
   );
 
