@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import GoogleBtn from "./GoogleBtn";
 
 const Container = styled.div`
   background-color: black;
   font-size: 15pt;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 10px 30px;
   margin-bottom: 10px;
   border-bottom: 1px solid grey;
@@ -18,10 +20,7 @@ const HyperLink = styled.div`
 const RightArea = styled.div`
   display: flex;
   flex-direction: row;
-`;
-
-const Login = styled.button`
-  margin-right: 20px;
+  align-items: center;
 `;
 
 function Navigation() {
@@ -31,7 +30,8 @@ function Navigation() {
         <HyperLink>My Blog!</HyperLink>
       </Link>
       <RightArea>
-        <Login>Google Login</Login>
+        <GoogleBtn />
+        <div style={{ width: "20px" }}></div>
         <Link to={`/mypage`}>
           <HyperLink>mypage</HyperLink>
         </Link>
