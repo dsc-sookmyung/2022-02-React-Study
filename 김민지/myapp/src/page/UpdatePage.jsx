@@ -1,6 +1,22 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+import styled from "styled-components";
+
+const Container = styled.div`
+  margin: 20px;
+`;
+
+const UpdateBtn = styled.button`
+  background-color: white;
+  color: #2146c7;
+  font-size: 1em;
+  padding: 0.25em 1em;
+  margin-right: 10px;
+  border: 2px solid #2146c7;
+  border-radius: 3px;
+  cursor: pointer;
+`;
 
 function UpdatePage(props) {
   const location = useLocation();
@@ -46,15 +62,15 @@ function UpdatePage(props) {
   };
 
   return (
-    <div>
+    <Container>
       <h2>글 수정</h2>
       <input type="text" name="title" value={title} onChange={handleTitleChange} />
       <br />
       <br />
       <textarea name="content" cols="50" rows="10" value={content} onChange={handleContentChange}></textarea>
       <hr />
-      <button onClick={handleUpdatePost}>수정 완료</button>
-    </div>
+      <UpdateBtn onClick={handleUpdatePost}>수정 완료</UpdateBtn>
+    </Container>
   );
 }
 
