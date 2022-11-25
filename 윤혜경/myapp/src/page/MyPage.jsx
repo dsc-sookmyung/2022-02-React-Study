@@ -1,11 +1,20 @@
-import React from "react";
+import { React, useState } from "react";
+import LoginGoogle from '../login/LoginGoogle';
+import Profile from '../login/Profile';
 
-function MyPage(props) {
+function MyPage() {
+
+    const [isLogin, setIsLogin] = useState(false);
+    const [userInfo, setUserInfo] = useState({});
+
     return (
-        <h2>
-            {"마이 페이지 (Coming Soon)!"}
-        </h2>
-    )
+        <>
+            {!isLogin
+                ? <LoginGoogle setUserInfo={setUserInfo} setIsLogin={setIsLogin} />
+                : <Profile userInfo={userInfo} />
+            }
+        </>
+    );
 }
 
 export default MyPage;
