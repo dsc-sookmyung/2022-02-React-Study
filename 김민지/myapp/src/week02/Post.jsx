@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const styles = {
   wrapper: {
@@ -10,8 +11,9 @@ const styles = {
     width: "400px",
     margin: 10,
     padding: 10,
-    border: "1px solid grey",
+    border: "1px solid #c0c0c0",
     borderRadius: 16,
+    cursor: "pointer",
   },
   titleText: {
     fontSize: "18px",
@@ -26,8 +28,10 @@ const styles = {
 };
 
 function Post(props) {
+  const navigate = useNavigate();
+
   return (
-    <div style={styles.wrapper}>
+    <div style={styles.wrapper} onClick={() => navigate(`/post/${props.id}`, { state: { id: props.id, title: props.title, nickname: props.nickname, content: props.content } })}>
       <div style={styles.contentContainer}>
         <div style={styles.titleText}>{props.title}</div>
         <div style={styles.nicknameText}>{props.nickname}</div>
